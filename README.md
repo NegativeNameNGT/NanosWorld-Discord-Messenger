@@ -31,16 +31,19 @@ Copy the link of the webhook to use it later in the code
 
 -- Send Discord Message
 local webhook = "your webhook WITHOUT discordapp.com"
-SendDiscordMessage(webhook, "hello world")
+
+Package.Call("erodiscordmessenger", "SendDiscordMessage", webhook, "hello world")
 
 -- Send Discord Embed
 
 local webhook = "your webhook WITHOUT discordapp.com"
+
 local myEmbed = {
 	["title"] = "hello world!",
 	["color"] = 65280,
 }
-    
-SendDiscordEmbed(webhook, myEmbed)
+   
+Package.Call("erodiscordmessenger", "SendDiscordEmbed", webhook, myEmbed)
+
 
 ```
