@@ -21,9 +21,6 @@ function SendDiscordMessage(webhookUrl, Message)
 end
 Package.Export("SendDiscordMessage", SendDiscordMessage)
 
-SendDiscordMessage(webhook, "hello world!")
-
-
 function SendDiscordEmbed(webhookUrl, embed)
     Embed = JSON.stringify({["embeds"] = {embed}})
 
@@ -37,11 +34,4 @@ function SendDiscordEmbed(webhookUrl, embed)
             Package.Log(ret.Status) -- 200
             Package.Log(ret.Data) -- nanos world server
 end
-
--- Example of embed
-local myEmbed = {
-	["title"] = "Meow!",
-	["color"] = 65280,
-}
-    
-SendDiscordEmbed(webhook, myEmbed)
+Package.Export("SendDiscordEmbed", SendDiscordEmbed)
