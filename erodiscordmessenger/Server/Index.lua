@@ -15,9 +15,6 @@ function SendDiscordMessage(webhookUrl, Message)
         Package.Log(message)
         -- Makes a synchronous HTTP Request
             local ret = HTTP.RequestSync("discordapp.com", webhookUrl, "POST", message, "application/x-www-form-urlencoded; charset=utf-8", false, {})
-
-                Package.Log(ret.Status) -- 200
-                Package.Log(ret.Data) -- nanos world server
 end
 Package.Export("SendDiscordMessage", SendDiscordMessage)
 
@@ -30,8 +27,5 @@ function SendDiscordEmbed(webhookUrl, embed)
     Package.Log(Embed)
     -- Makes a synchronous HTTP Request
         local ret = HTTP.RequestSync("discordapp.com", webhookUrl, "POST", message, "application/x-www-form-urlencoded; charset=utf-8", false, {})
-
-            Package.Log(ret.Status) -- 200
-            Package.Log(ret.Data) -- nanos world server
 end
 Package.Export("SendDiscordEmbed", SendDiscordEmbed)
