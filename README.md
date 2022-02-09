@@ -19,6 +19,7 @@ Send discord messages & embed messages directly in-game thanks to Discord Webhoo
 
 Select your channel & the name of the webhook
 Copy the link of the webhook to use it later in the code
+
 ![image](https://user-images.githubusercontent.com/79408258/153308274-1afa7a32-55f0-4f4f-8583-57e2e55f01a5.png)
 
 
