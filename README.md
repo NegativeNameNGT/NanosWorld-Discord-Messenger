@@ -8,7 +8,7 @@ Send discord messages & embed messages directly in-game thanks to Discord Webhoo
 1. Drag and drop the package in your packages folder.
 2. Add it to your packages requirements
 3. Create a webhook
-4. 
+
 ![d1](https://user-images.githubusercontent.com/79408258/153308065-a9e642e7-fc92-436d-a9db-6530bea1dda5.png)
 
 ![d2](https://user-images.githubusercontent.com/79408258/153308136-cc6a0437-c9a3-485f-b8b4-bea7beede84a.png)
